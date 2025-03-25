@@ -1,14 +1,26 @@
 import { useEffect, useState } from 'react'
-
+import Lenis from '@studio-freight/lenis';
 import './App.css'
 import CustomCursor from './components/CustomCursor'
 
 function App() {
 
+  const lenis = new Lenis({
+    duration: 1.2, 
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true, 
+    smoothTouch: true, 
+  });
 
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  
+  requestAnimationFrame(raf);
 
   return (
-    <>
+    < >
     <CustomCursor></CustomCursor>
         <div className='w-full flex flex-wrap justify-center items-center flex-col pt-20 '>
           <div className='text-center'>
@@ -61,44 +73,64 @@ function App() {
       <div className="w-full flex flex-col items-center pt-1">
 
           <div className="flex flex-col md:flex-row flex-wrap md:pl-3 gap-8 pt-4">
-            <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
-              <img src="/project1.png" className="w-full h-56 object-cover" alt="E-commerce store" />
-              <div className="p-4">
-                <h1 className="text-xl md:text-2xl font-bold">Compra facil e-commerce</h1>
-                <h1 className="text-lg">React.js - TailwindCSS - MongoDB</h1>
+            <a href="https://compra-facil.netlify.app/" target='_blank' className='cursor-none'>
+              <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
+                <img src="/project1.png" className="w-full h-56 object-cover" alt="E-commerce store" />
+                <div className="p-4">
+                  <h1 className="text-xl md:text-2xl font-bold">Compra facil e-commerce</h1>
+                  <h1 className="text-lg">React.js - TailwindCSS - MongoDB</h1>
+                </div>
               </div>
-            </div>
-
-            <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
-              <img src="/project2.jpg" className="w-full h-56 object-cover" alt="Note app" />
-              <div className="p-4">
-                <h1 className="text-xl md:text-2xl font-bold">Note app</h1>
-                <h1 className="text-lg">React.js - TailwindCSS - Springboot - PostgreSQL</h1>
+            </a>
+            <a href="https://n-react.netlify.app/" target='_blank' className='cursor-none'>
+              <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
+                <img src="/project2.jpg" className="w-full h-56 object-cover" alt="Note app" />
+                <div className="p-4">
+                  <h1 className="text-xl md:text-2xl font-bold">Note app</h1>
+                  <h1 className="text-lg">React.js - TailwindCSS - Springboot - PostgreSQL</h1>
+                </div>
               </div>
-            </div>
-
-            <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
-              <img src="/project3.jpg" className="w-full h-56 object-cover" alt="Multiprocessor scheduling" />
-              <div className="p-4">
-                <h1 className="text-xl md:text-2xl font-bold">Multiprocessor scheduling</h1>
-                <h1 className="text-lg">Java - Data structures - Backtracking - Greedy Algorithm</h1>
+            </a>
+            <a href="https://github.com/Nahucaroseli/prog3_tpe" target='_blank' className='cursor-none'>
+              <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
+                <img src="/project3.jpg" className="w-full h-56 object-cover" alt="Multiprocessor scheduling" />
+                <div className="p-4">
+                  <h1 className="text-xl md:text-2xl font-bold">Multiprocessor scheduling</h1>
+                  <h1 className="text-lg">Java - Data structures - Backtracking - Greedy Algorithm</h1>
+                </div>
               </div>
-            </div>
-
-            <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
-              <img src="/project4.webp" className="w-full h-56 object-cover" alt="Nico Trainer Website" />
-              <div className="p-4">
-                <h1 className="text-xl md:text-2xl font-bold">Nico Trainer Website</h1>
-                <h1 className="text-lg">React.js - TailwindCSS - Node.js</h1>
+            </a>
+            <a href="https://nicotrainer.pages.dev/" target='_blank' className='cursor-none'>
+              <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
+                <img src="/project4.webp" className="w-full h-56 object-cover" alt="Nico Trainer Website" />
+                <div className="p-4">
+                  <h1 className="text-xl md:text-2xl font-bold">Nico Trainer Website</h1>
+                  <h1 className="text-lg">React.js - TailwindCSS - Node.js</h1>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
       </div>
       <div className='pl-3 w-80 flex mt-40 md:pt-0 flex-col max-w-[90%] md:w-full'>
-          <h1 className='text-2xl font-bold md:text-4xl'>5- Contact me</h1>
-          <p className='pt-3 leading-relaxed text-xl md:text-2xl'>
+          <h1 className='text-2xl font-bold md:text-4xl'>Contact me</h1>
+          <p className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
             nahucaroseli2100@gmail.com
           </p>
+      </div>
+      <div className='pl-3 w-80 flex mt-10 md:pt-0 flex-col max-w-[90%] md:w-70'>
+          <h1 className='text-2xl font-bold md:text-4xl'>Socials</h1>
+          <a href='https://www.linkedin.com/in/nahuel-caroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+            Linkedin
+          </a>
+          <a href='https://www.instagram.com/nahu_caroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+            Instagram
+          </a>
+          <a href='https://github.com/Nahucaroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+            Github
+          </a>
+          <a className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
+            Download resume
+          </a>
       </div>
     </>
   )
