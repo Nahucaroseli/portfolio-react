@@ -6,6 +6,7 @@ function CustomCursor() {
   useEffect(() => {
     const moveCursor = (e) => {
       setCursorPos({ x: e.clientX, y: e.clientY });
+      console.log(e);
     };
 
     window.addEventListener('mousemove', moveCursor);

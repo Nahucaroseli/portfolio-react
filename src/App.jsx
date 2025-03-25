@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import './App.css'
 import CustomCursor from './components/CustomCursor'
@@ -6,25 +6,25 @@ import CustomCursor from './components/CustomCursor'
 function App() {
 
 
+
   return (
     <>
     <CustomCursor></CustomCursor>
-      <div className='text-center w-full pl-3 flex flex-col pt-20 gap-5 md:w-full gap-y-20'>
-        <div className='w-auto'>
-          <h1 className='text-4xl md:text-8xl font-bold'>I’M NAHUEL CAROSELI</h1>
-          <p className='text-3xl pt-5 md:text-6xl'>a passionate fullstack developer</p>
+        <div className='w-full flex flex-wrap justify-center items-center flex-col pt-20 '>
+          <div className='text-center'>
+            <h1 className='text-4xl md:text-8xl font-bold'>I’M NAHUEL CAROSELI</h1>
+            <p className='text-3xl pt-5 md:text-6xl'>a passionate fullstack developer</p>
+          </div>
+          <div className='flex md:flex-row md:gap-x-5 flex-wrap justify-center'>
+            <img src="/img2.jpg" className='hidden w-100 h-100 object-cover mt-20 md:block' alt="" id="about_1"  draggable="false"/>
+            <img src="/about.jpeg" className='w-70 h-70 md:w-100 h-100 object-cover mt-20 ' alt="" id="about_2"  draggable="false"/>
+          </div>
         </div>
-        <div className='flex flex-row gap-x-5 justify-center'>
-          <img src="/img.jpg" className='hidden w-100 h-100 object-cover md:block' alt="" />
-          <img src="/img2.jpg" className='hidden w-100 h-100 object-cover md:block' alt="" />
-          <img src="/about.jpeg" className='w-80 h-80 md:w-100 h-100 object-cover' alt="" />
-        </div>
-      </div>
 
       <div className='w-80 flex pl-3 mt-40 md:pt-0 flex-col max-w-[90%] md:w-full'>
         <h1 className='text-2xl font-bold md:text-4xl'>1- Experience</h1>
         <p className='pt-3 leading-relaxed text-xl md:text-2xl'>
-          freelance fullstack developer
+          Freelance fullstack developer
           <strong className=''> (march 2025) - Nico Trainer website</strong>
         </p>
       </div>
@@ -56,40 +56,50 @@ function App() {
         Personal and Professional IT Technician
           <strong className=''> (2013-2020)</strong>
         </p>
-      </div>  
-      <div className='w-80 flex pl-3 pt-20 flex-col max-w-[90%] md:w-full'>
-        <h1 className='text-xl font-bold md:text-4xl'>4- Projects</h1>
-        <div className='flex flex-col flex-wrap md:flex-row pt-4 gap-8'>
-            <div className='flex flex-col shadow transition duration-150 hover:shadow hover:shadow-2xl h-80 hover:scale-102 rounded-lg'>
-              <img src="/project1.png" className='md:w-100 h-80 object-cover' alt="" />
-              <div className='pl-4 h-40'>
-                <h1 className='pt-3 text-xl md:text-2xl font-bold'>e-commerce online store</h1>
-                <h1 className='text-xl'>React.js - TailwindCSS - MongoDB</h1>
+      </div>
+      <h1 className="pl-3 pt-20 text-2xl font-bold md:text-4xl">4- Projects</h1>  
+      <div className="w-full flex flex-col items-center pt-1">
+
+          <div className="flex flex-col md:flex-row flex-wrap md:pl-3 gap-8 pt-4">
+            <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
+              <img src="/project1.png" className="w-full h-56 object-cover" alt="E-commerce store" />
+              <div className="p-4">
+                <h1 className="text-xl md:text-2xl font-bold">Compra facil e-commerce</h1>
+                <h1 className="text-lg">React.js - TailwindCSS - MongoDB</h1>
               </div>
             </div>
-            <div className='flex flex-col shadow transition duration-200 hover:shadow hover:shadow-2xl h-80 hover:scale-102 rounded-lg'>
-              <img src="/project2.jpg" className='md:w-90 h-80' alt="" />
-              <div className='pl-4 h-40 w-90'>
-                <h1 className='pt-3 text-xl md:text-2xl font-bold'>note app</h1>
-                <h1 className='text-xl'>React.js - TailwindCSS - Springboot - PostgreSQL</h1>
+
+            <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
+              <img src="/project2.jpg" className="w-full h-56 object-cover" alt="Note app" />
+              <div className="p-4">
+                <h1 className="text-xl md:text-2xl font-bold">Note app</h1>
+                <h1 className="text-lg">React.js - TailwindCSS - Springboot - PostgreSQL</h1>
               </div>
             </div>
-            <div className='flex flex-col shadow transition duration-150 hover:shadow hover:shadow-2xl h-80 hover:scale-102 rounded-lg'>
-              <img src="/project1.png" className='md:w-100 h-80 object-cover' alt="" />
-              <div className='pl-4 h-40'>
-                <h1 className='pt-3 text-xl md:text-2xl font-bold'>e-commerce online store</h1>
-                <h1 className='text-xl'>React.js - TailwindCSS - MongoDB</h1>
+
+            <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
+              <img src="/project3.jpg" className="w-full h-56 object-cover" alt="Multiprocessor scheduling" />
+              <div className="p-4">
+                <h1 className="text-xl md:text-2xl font-bold">Multiprocessor scheduling</h1>
+                <h1 className="text-lg">Java - Data structures - Backtracking - Greedy Algorithm</h1>
               </div>
             </div>
-            <div className='flex flex-col shadow transition duration-150 hover:shadow hover:shadow-2xl h-80 hover:scale-102 rounded-lg'>
-              <img src="/project1.png" className='md:w-100 h-80 object-cover' alt="" />
-              <div className='pl-4 h-40'>
-                <h1 className='pt-3 text-xl md:text-2xl font-bold'>e-commerce online store</h1>
-                <h1 className='text-xl'>React.js - TailwindCSS - MongoDB</h1>
+
+            <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
+              <img src="/project4.webp" className="w-full h-56 object-cover" alt="Nico Trainer Website" />
+              <div className="p-4">
+                <h1 className="text-xl md:text-2xl font-bold">Nico Trainer Website</h1>
+                <h1 className="text-lg">React.js - TailwindCSS - Node.js</h1>
               </div>
             </div>
-        </div>
-      </div>  
+          </div>
+      </div>
+      <div className='pl-3 w-80 flex mt-40 md:pt-0 flex-col max-w-[90%] md:w-full'>
+          <h1 className='text-2xl font-bold md:text-4xl'>5- Contact me</h1>
+          <p className='pt-3 leading-relaxed text-xl md:text-2xl'>
+            nahucaroseli2100@gmail.com
+          </p>
+      </div>
     </>
   )
 }
