@@ -128,7 +128,7 @@ function App() {
           <a href='https://github.com/Nahucaroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
             Github
           </a>
-          <a className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
+          <a href='/Curriculum Vitae.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
             Download resume
           </a>
       </div>
