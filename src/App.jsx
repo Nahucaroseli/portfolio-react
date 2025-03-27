@@ -28,8 +28,8 @@ function App() {
             <p className='text-3xl pt-5 md:text-6xl'>a passionate fullstack developer</p>
           </div>
           <div className='flex md:flex-row md:gap-x-5 flex-wrap justify-center'>
-            <img src="/img2.jpg" className='hidden w-100 h-100 object-cover mt-20 md:block' alt="" id="about_1"  draggable="false"/>
-            <img src="/about.jpeg" className='w-70 h-70 md:w-100 h-100 object-cover mt-20 ' alt="" id="about_2"  draggable="false"/>
+            <img src="/img2.jpg" className='hidden w-100 h-100 object-cover mt-20 md:block transition duration-200 hover:scale-105' alt="" id="about_1"  draggable="false"/>
+            <img src="/about.jpeg" className='w-70 h-70 md:w-100 h-100 object-cover mt-20 transition duration-200 hover:scale-105' alt="" id="about_2"  draggable="false"/>
           </div>
         </div>
 
@@ -111,27 +111,39 @@ function App() {
             </a>
           </div>
       </div>
-      <div className='pl-3 w-80 flex mt-40 md:pt-0 flex-col max-w-[90%] md:w-full'>
-          <h1 className='text-2xl font-bold md:text-4xl'>Contact me</h1>
-          <p className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
-            nahucaroseli2100@gmail.com
-          </p>
+      <div>
+      <div className='flex flex-row justify-between'> 
+        <div>
+            <div className='pl-3 w-80 flex  mt-40 md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row justify-between'>
+                    <div>
+                      <h1 className='text-2xl font-bold md:text-4xl'>Contact me</h1>
+                      <p className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
+                        nahucaroseli2100@gmail.com
+                      </p>
+                    </div>
+                </div>
+                <div className='pl-3 w-80 mt-10 flex md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row'>
+                  <div className='flex flex-col'>
+                      <h1 className='text-2xl font-bold md:text-4xl'>Socials</h1>
+                      <a href='https://www.linkedin.com/in/nahuel-caroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                        Linkedin
+                      </a>
+                      <a href='https://www.instagram.com/nahu_caroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                        Instagram
+                      </a>
+                      <a href='https://github.com/Nahucaroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                        Github
+                      </a>
+                      <a href='/Curriculum Vitae.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                        Download resume
+                      </a>
+                  </div>
+             </div>
+        </div>
+        <img src="/img.jpg" className='object-cover mt-40 mr-5 hidden md:flex md:w-90 h-90 transition duration-200 hover:scale-105' alt="" />    
       </div>
-      <div className='pl-3 w-80 flex mt-10 md:pt-0 flex-col max-w-[90%] md:w-70'>
-          <h1 className='text-2xl font-bold md:text-4xl'>Socials</h1>
-          <a href='https://www.linkedin.com/in/nahuel-caroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
-            Linkedin
-          </a>
-          <a href='https://www.instagram.com/nahu_caroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
-            Instagram
-          </a>
-          <a href='https://github.com/Nahucaroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
-            Github
-          </a>
-          <a href='/Curriculum Vitae.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
-            Download resume
-          </a>
       </div>
+
     </>
   )
 }
