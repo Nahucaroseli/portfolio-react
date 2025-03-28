@@ -47,6 +47,7 @@ function App() {
 
           <span className="text-xl md:text-2xl">React.js</span>
           <span className="text-xl md:text-2xl">Node.js</span>
+          <span className="text-xl md:text-2xl">Express.js</span>
           <span className="text-xl md:text-2xl">TailwindCSS</span>
           <span className="text-xl md:text-2xl">HTML</span>
           <span className="text-xl md:text-2xl">CSS</span>
@@ -134,7 +135,7 @@ function App() {
                       <a href='https://github.com/Nahucaroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Github
                       </a>
-                      <a href='/Curriculum Vitae.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <a href='/resume-nahuel-caroseli.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Download resume
                       </a>
                   </div>
