@@ -6,7 +6,6 @@ function CustomCursor() {
   useEffect(() => {
     const moveCursor = (e) => {
       setCursorPos({ x: e.clientX, y: e.clientY });
-      console.log(e);
     };
 
     window.addEventListener('mousemove', moveCursor);
@@ -18,7 +17,7 @@ function CustomCursor() {
 
   return (
     <div
-      className="fixed pointer-events-none w-5 h-5 bg-green-900 z-1  rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-75"
+      className="md:fixed pointer-events-none w-5 h-5 md:bg-green-900 z-1  rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-transform duration-75"
       style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }}
     />
   );

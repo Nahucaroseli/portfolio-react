@@ -5,6 +5,14 @@ import CustomCursor from './components/CustomCursor'
 
 function App() {
 
+  const [copiedText, setCopiedText] = useState(false);
+
+  const copyToClipboard = ()=>{
+    navigator.clipboard.writeText("nahucaroseli2100@gmail.com");
+    setCopiedText(true);
+    setTimeout(()=>setCopiedText(false),3000)
+  }
+
   const lenis = new Lenis({
     duration: 1.2, 
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -20,7 +28,7 @@ function App() {
   requestAnimationFrame(raf);
 
   return (
-    < >
+    <>
     <CustomCursor></CustomCursor>
         <div className='w-full flex flex-wrap justify-center items-center flex-col pt-20 '>
           <div className='text-center'>
@@ -118,9 +126,14 @@ function App() {
             <div className='pl-3 w-80 flex  mt-40 md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row justify-between'>
                     <div>
                       <h1 className='text-2xl font-bold md:text-4xl'>Contact me</h1>
-                      <p className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
+                      <p onClick={copyToClipboard} className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
                         nahucaroseli2100@gmail.com
                       </p>
+                      {copiedText &&
+                        <div className='email_copy'>
+                          <h1>Copied to Clipboard!</h1>
+                          </div>
+                        }
                     </div>
                 </div>
                 <div className='pl-3 w-80 mt-10 flex md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row'>

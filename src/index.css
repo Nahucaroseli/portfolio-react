@@ -9,7 +9,7 @@
 
 
 body {
-  cursor: none; /* Oculta el cursor normal */
+  cursor: none;
 }
 
 ::selection{
@@ -20,4 +20,12 @@ body {
 #about_1, #about_2{
   user-select: none;
 
+}
+
+.email_copy{
+  width: 180px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #1B5018;
+  color:white;
 }
