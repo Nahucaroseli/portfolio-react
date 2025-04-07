@@ -148,7 +148,7 @@ function App() {
                       <a href='https://github.com/Nahucaroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Github
                       </a>
-                      <a href='/resume-nahuel-caroseli.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <a href='/cv.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Download resume
                       </a>
                   </div>
