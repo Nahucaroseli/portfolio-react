@@ -80,45 +80,58 @@ function App() {
       </div>
       <h1 className="pl-3 pt-20 text-2xl font-bold md:text-4xl">4- Projects</h1>  
       <div className="w-full flex flex-col items-center pt-1">
-
-          <div className="flex flex-col md:flex-row flex-wrap md:pl-3 gap-8 pt-4">
-            <a href="https://compra-facil.netlify.app/" target='_blank' className='cursor-none'>
-              <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
-                <img src="/project1.png" className="w-full h-56 object-cover" alt="E-commerce store" />
-                <div className="p-4">
-                  <h1 className="text-xl md:text-2xl font-bold">Compra facil e-commerce</h1>
-                  <h1 className="text-lg">React.js - TailwindCSS - MongoDB</h1>
-                </div>
-              </div>
-            </a>
-            <a href="https://n-react.netlify.app/" target='_blank' className='cursor-none'>
-              <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
-                <img src="/project2.jpg" className="w-full h-56 object-cover" alt="Note app" />
-                <div className="p-4">
-                  <h1 className="text-xl md:text-2xl font-bold">Note app</h1>
-                  <h1 className="text-lg">React.js - TailwindCSS - Springboot - PostgreSQL</h1>
-                </div>
-              </div>
-            </a>
-            <a href="https://github.com/Nahucaroseli/prog3_tpe" target='_blank' className='cursor-none'>
-              <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
-                <img src="/project3.jpg" className="w-full h-56 object-cover" alt="Multiprocessor scheduling" />
-                <div className="p-4">
-                  <h1 className="text-xl md:text-2xl font-bold">Multiprocessor scheduling</h1>
-                  <h1 className="text-lg">Java - Data structures - Backtracking - Greedy Algorithm</h1>
-                </div>
-              </div>
-            </a>
-            <a href="https://nicotrainer.pages.dev/" target='_blank' className='cursor-none'>
-              <div className="flex flex-col w-80 md:w-96 shadow-lg transition duration-150 hover:shadow-2xl hover:scale-105 rounded-lg">
-                <img src="/project4.webp" className="w-full h-56 object-cover" alt="Nico Trainer Website" />
-                <div className="p-4">
-                  <h1 className="text-xl md:text-2xl font-bold">Nico Trainer Website</h1>
-                  <h1 className="text-lg">React.js - TailwindCSS - Node.js</h1>
-                </div>
-              </div>
-            </a>
+        <div className="flex flex-col md:pl-3 gap-8 pt-4 w-full items-center justify-center">
+          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_1">
+            <div className="p-4 text-white flex flex-col">
+            <h1 className="text-white text-4xl md:text-6xl  font-bold">COMPRA FACIL</h1>
+              <h2 className="text-lg mt-10 font-bold">React.js</h2>
+              <h2 className="text-lg font-bold">TailwindCSS</h2>
+              <h2 className="text-lg font-bold">MongoDB</h2>
+              <h2 className="text-lg font-bold">React Hot Toast</h2>
+              <h2 className="text-lg font-bold">Node.js</h2>
+              <h2 className="text-lg font-bold">Express.js</h2>
+              <h2 className="text-lg font-bold">MongoDB</h2>
+              <h2 className="text-lg font-bold">Mongoose</h2>
+              <h2 className="text-lg font-bold">JWT</h2>
+            </div>
+            <div className='p-4 flex flex-row text-white gap-x-5'>
+                <a href="https://github.com/Nahucaroseli/e-commerce-react" className='md:text-xl font-bold underline'>FRONTEND CODE</a>
+                <a href="https://github.com/Nahucaroseli/e-commerce-backend" className='md:text-xl font-bold underline'>BACKEND CODE</a>
+                <a href="https://compra-facil.netlify.app/" className='md:text-xl font-bold underline'>WEBSITE</a>
+            </div>
           </div>
+          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_2">
+
+            <div className="p-4 text-black flex flex-col">
+            <h1 className="text-black text-4xl md:text-6xl  font-bold">NOTE APP</h1>
+              <h2 className="text-lg mt-10 font-bold">React.js</h2>
+              <h2 className="text-lg font-bold">TailwindCSS</h2>
+              <h2 className="text-lg font-bold">PostgreSQL</h2>
+              <h2 className="text-lg font-bold">Springboot</h2>
+              <h2 className="text-lg font-bold">Supabase</h2>
+            </div>
+            <div className='p-4 flex flex-row text-black gap-x-5'>
+                <a href="https://github.com/Nahucaroseli/noteapp-react" className='md:text-xl font-bold underline'>FRONTEND CODE</a>
+                <a href="" className='md:text-xl font-bold underline'>BACKEND CODE</a>
+                <a href="https://n-react.netlify.app/" className='md:text-xl font-bold underline'>WEBSITE</a>
+            </div>
+          </div>
+          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_3">
+
+            <div className="p-4 text-white flex flex-col">
+            <h1 className="text-white text-4xl md:text-6xl  font-bold">MULTIPROCESSOR SCHEDULING</h1>
+              <h2 className="text-lg mt-10 font-bold">Java</h2>
+              <h2 className="text-lg font-bold">Backtracking Algorithm</h2>
+              <h2 className="text-lg font-bold">Greedy Algorithm</h2>
+              <h2 className="text-lg font-bold">Graphs</h2>
+              <h2 className="text-lg font-bold">Trees</h2>
+              <h2 className="text-lg font-bold">LinkedList</h2>
+            </div>
+            <div className='p-4 flex flex-row text-white gap-x-5'>
+                <a href="https://github.com/Nahucaroseli/prog3_tpe" className='md:text-xl font-bold underline'>CODE</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
       <div className='flex flex-row justify-between'> 

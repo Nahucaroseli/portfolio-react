@@ -29,3 +29,25 @@ body {
   background-color: #1B5018;
   color:white;
 }
+
+#project_1{
+  background-image: url("/clothes.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  
+}
+
+#project_2{
+  background-image: url("/noteapp.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+#project_3{
+  background-image: url("/processor.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
