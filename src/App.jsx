@@ -71,11 +71,9 @@ function App() {
         <h1 className='text-2xl font-bold md:text-4xl'>3- Education</h1>
         <p className='pt-3 text-xl leading-relaxed md:text-2xl'>
           UNICEN University Degree in Computer Application Development (TUDAI)
-          <strong className=''> (2021-2025)</strong>
         </p>
         <p className='pt-3 text-xl leading-relaxed md:text-2xl'>
         Personal and Professional IT Technician
-          <strong className=''> (2013-2020)</strong>
         </p>
       </div>
       <h1 className="pl-3 pt-20 text-2xl font-bold md:text-4xl">4- Projects</h1>  
@@ -109,6 +107,7 @@ function App() {
               <h2 className="text-lg font-bold">PostgreSQL</h2>
               <h2 className="text-lg font-bold">Springboot</h2>
               <h2 className="text-lg font-bold">Supabase</h2>
+              <h2 className="text-lg font-bold">JWT</h2>
             </div>
             <div className='p-4 flex flex-row text-black gap-x-5'>
                 <a href="https://github.com/Nahucaroseli/noteapp-react" className='md:text-xl font-bold underline'>FRONTEND CODE</a>
@@ -129,6 +128,20 @@ function App() {
             </div>
             <div className='p-4 flex flex-row text-white gap-x-5'>
                 <a href="https://github.com/Nahucaroseli/prog3_tpe" className='md:text-xl font-bold underline'>CODE</a>
+            </div>
+          </div>
+          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_4">
+
+            <div className="p-4 text-white flex flex-col">
+            <h1 className="text-white text-4xl md:text-6xl  font-bold">NICO TRAINER WEBSITE</h1>
+              <h2 className="text-lg mt-10 font-bold">React.js</h2>
+              <h2 className="text-lg font-bold">TailwindCSS</h2>
+              <h2 className="text-lg font-bold">Node.js</h2>
+              <h2 className="text-lg font-bold">Express.js</h2>
+              <h2 className="text-lg font-bold">Brevo API</h2>
+            </div>
+            <div className='p-4 flex flex-row text-white gap-x-5'>
+                <a href="https://nicotrainer.pages.dev/" className='md:text-xl font-bold underline'>WEBSITE</a>
             </div>
           </div>
         </div>

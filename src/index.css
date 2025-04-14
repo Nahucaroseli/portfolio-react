@@ -51,3 +51,10 @@ body {
   background-size:cover;
   background-position: center;
 }
+
+#project_4{
+  background-image: url("/dumbbell.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
