@@ -32,8 +32,8 @@ function App() {
     <CustomCursor></CustomCursor>
         <div className='w-full flex flex-wrap justify-center items-center flex-col pt-20 '>
           <div className='text-center'>
-            <h1 className='text-4xl md:text-8xl font-bold'>I’M NAHUEL CAROSELI</h1>
-            <p className='text-3xl pt-5 md:text-6xl'>a passionate fullstack developer</p>
+            <h1 className='text-5xl md:text-8xl font-bold'>I’M NAHUEL CAROSELI</h1>
+            <p className='text-3xl pt-10 md:text-6xl'>a passionate fullstack developer</p>
           </div>
           <div className='flex md:flex-row md:gap-x-5 flex-wrap justify-center'>
             <img src="/img2.jpg" className='hidden w-100 h-100 object-cover mt-20 md:block transition duration-200 hover:scale-105' alt="" id="about_1"  draggable="false"/>
@@ -42,7 +42,7 @@ function App() {
         </div>
 
       <div className='w-80 flex pl-3 mt-40 md:pt-0 flex-col max-w-[90%] md:w-full'>
-        <h1 className='text-2xl font-bold md:text-4xl'>1- Experience</h1>
+        <h1 className='text-3xl font-bold md:text-4xl'>1- Experience</h1>
         <p className='pt-3 leading-relaxed text-xl md:text-2xl'>
           Freelance fullstack developer
           <strong className=''> (march 2025) - Nico Trainer website</strong>
@@ -50,7 +50,7 @@ function App() {
       </div>
 
       <div className='w-80 flex  pl-3 pt-20 flex-col max-w-[90%] md:w-full'>
-        <h1 className='text-2xl font-bold md:text-4xl'>2- Skills</h1>
+        <h1 className='text-3xl font-bold md:text-4xl'>2- Skills</h1>
         <div className="flex flex-col flex-wrap gap-1 pt-3">
 
           <span className="text-xl md:text-2xl">React.js</span>
@@ -68,7 +68,7 @@ function App() {
         </div>
       </div>
       <div className='w-80 flex pl-3 pt-20 flex-col max-w-[90%] md:w-full'>
-        <h1 className='text-2xl font-bold md:text-4xl'>3- Education</h1>
+        <h1 className='text-3xl font-bold md:text-4xl'>3- Education</h1>
         <p className='pt-3 text-xl leading-relaxed md:text-2xl'>
           UNICEN University Degree in Computer Application Development (TUDAI)
         </p>
@@ -76,12 +76,12 @@ function App() {
         Personal and Professional IT Technician
         </p>
       </div>
-      <h1 className="pl-3 pt-20 text-2xl font-bold md:text-4xl">4- Projects</h1>  
+      <h1 className="pl-3 pt-20 text-3xl font-bold md:text-4xl">4- Projects</h1>  
       <div className="w-full flex flex-col items-center pt-1">
         <div className="flex flex-col md:pl-3 gap-8 pt-4 w-full items-center justify-center">
           <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_1">
             <div className="p-4 text-white flex flex-col">
-            <h1 className="text-white text-4xl md:text-6xl  font-bold">COMPRA FACIL</h1>
+            <h1 className="text-white text-3xl md:text-6xl  font-bold">COMPRA FACIL</h1>
               <h2 className="text-lg mt-10 font-bold">React.js</h2>
               <h2 className="text-lg font-bold">TailwindCSS</h2>
               <h2 className="text-lg font-bold">MongoDB</h2>
@@ -93,15 +93,15 @@ function App() {
               <h2 className="text-lg font-bold">JWT</h2>
             </div>
             <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://github.com/Nahucaroseli/e-commerce-react" className='md:text-xl font-bold underline'>FRONTEND CODE</a>
-                <a href="https://github.com/Nahucaroseli/e-commerce-backend" className='md:text-xl font-bold underline'>BACKEND CODE</a>
-                <a href="https://compra-facil.netlify.app/" className='md:text-xl font-bold underline'>WEBSITE</a>
+                <a href="https://github.com/Nahucaroseli/e-commerce-react" target='_blank' className='md:text-xl font-bold underline'>FRONTEND CODE</a>
+                <a href="https://github.com/Nahucaroseli/e-commerce-backend" target='_blank' className='md:text-xl font-bold underline'>BACKEND CODE</a>
+                <a href="https://compra-facil.netlify.app/" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
             </div>
           </div>
           <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_2">
 
             <div className="p-4 text-black flex flex-col">
-            <h1 className="text-black text-4xl md:text-6xl  font-bold">NOTE APP</h1>
+            <h1 className="text-black text-3xl md:text-6xl  font-bold">NOTE APP</h1>
               <h2 className="text-lg mt-10 font-bold">React.js</h2>
               <h2 className="text-lg font-bold">TailwindCSS</h2>
               <h2 className="text-lg font-bold">PostgreSQL</h2>
@@ -110,15 +110,15 @@ function App() {
               <h2 className="text-lg font-bold">JWT</h2>
             </div>
             <div className='p-4 flex flex-row text-black gap-x-5'>
-                <a href="https://github.com/Nahucaroseli/noteapp-react" className='md:text-xl font-bold underline'>FRONTEND CODE</a>
-                <a href="" className='md:text-xl font-bold underline'>BACKEND CODE</a>
-                <a href="https://n-react.netlify.app/" className='md:text-xl font-bold underline'>WEBSITE</a>
+                <a href="https://github.com/Nahucaroseli/noteapp-react" target='_blank' className='md:text-xl font-bold underline'>FRONTEND CODE</a>
+                <a href="https://github.com/Nahucaroseli/noteapp-backend" className='md:text-xl font-bold underline' target='_blank'>BACKEND CODE</a>
+                <a href="https://n-react.netlify.app/" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
             </div>
           </div>
           <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_3">
 
             <div className="p-4 text-white flex flex-col">
-            <h1 className="text-white text-4xl md:text-6xl  font-bold">MULTIPROCESSOR SCHEDULING</h1>
+            <h1 className="text-white text-3xl md:text-6xl  font-bold">MULTIPROCESSOR SCHEDULING</h1>
               <h2 className="text-lg mt-10 font-bold">Java</h2>
               <h2 className="text-lg font-bold">Backtracking Algorithm</h2>
               <h2 className="text-lg font-bold">Greedy Algorithm</h2>
@@ -127,13 +127,13 @@ function App() {
               <h2 className="text-lg font-bold">LinkedList</h2>
             </div>
             <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://github.com/Nahucaroseli/prog3_tpe" className='md:text-xl font-bold underline'>CODE</a>
+                <a href="https://github.com/Nahucaroseli/prog3_tpe" target='_blank' className='md:text-xl font-bold underline'>CODE</a>
             </div>
           </div>
           <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_4">
 
             <div className="p-4 text-white flex flex-col">
-            <h1 className="text-white text-4xl md:text-6xl  font-bold">NICO TRAINER WEBSITE</h1>
+            <h1 className="text-white text-3xl md:text-6xl  font-bold">NICO TRAINER WEBSITE</h1>
               <h2 className="text-lg mt-10 font-bold">React.js</h2>
               <h2 className="text-lg font-bold">TailwindCSS</h2>
               <h2 className="text-lg font-bold">Node.js</h2>
@@ -141,7 +141,7 @@ function App() {
               <h2 className="text-lg font-bold">Brevo API</h2>
             </div>
             <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://nicotrainer.pages.dev/" className='md:text-xl font-bold underline'>WEBSITE</a>
+                <a href="https://nicotrainer.pages.dev/" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@ function App() {
         <div>
             <div className='pl-3 w-80 flex  mt-40 md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row justify-between'>
                     <div>
-                      <h1 className='text-2xl font-bold md:text-4xl'>Contact me</h1>
+                      <h1 className='text-3xl font-bold md:text-4xl'>Contact me</h1>
                       <p onClick={copyToClipboard} className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
                         nahucaroseli2100@gmail.com
                       </p>
@@ -164,14 +164,14 @@ function App() {
                 </div>
                 <div className='pl-3 w-80 mt-10 flex md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row'>
                   <div className='flex flex-col'>
-                      <h1 className='text-2xl font-bold md:text-4xl'>Socials</h1>
-                      <a href='https://www.linkedin.com/in/nahuel-caroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <h1 className='text-3xl font-bold md:text-4xl'>Socials</h1>
+                      <a href='https://www.linkedin.com/in/nahuel-caroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Linkedin
                       </a>
-                      <a href='https://www.instagram.com/nahu_caroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <a href='https://www.instagram.com/nahu_caroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Instagram
                       </a>
-                      <a href='https://github.com/Nahucaroseli' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <a href='https://github.com/Nahucaroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Github
                       </a>
                       <a href='/cv.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
