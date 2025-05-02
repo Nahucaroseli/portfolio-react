@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import Lenis from '@studio-freight/lenis';
 import './App.css'
 import CustomCursor from './components/CustomCursor'
+import ParticlesBackground from './components/ParticlesBackground';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 function App() {
 
@@ -29,44 +32,28 @@ function App() {
 
   return (
     <>
-    <CustomCursor></CustomCursor>
-        <div className='w-full flex flex-wrap justify-center items-center flex-col pt-20 '>
-          <div className='text-center'>
-            <h1 className='text-5xl md:text-8xl font-bold'>I’M NAHUEL CAROSELI</h1>
-            <p className='text-3xl pt-10 md:text-6xl'>a passionate fullstack developer</p>
+     <ParticlesBackground></ParticlesBackground>
+     <CustomCursor></CustomCursor>
+    <div className='relative z-100'>
+        <div className='pl-3 w-full flex md:flex-row items-center flex-col pt-5'>
+          <div className='text-center md:text-left max-w-[70%]'>
+            <h1 className='text-6xl md:text-7xl font-bold'>NAHUEL CAROSELI</h1>
+            <p className='text-3xl pt-10 md:text-4xl font-bold'>full-stack developer</p>
+            <p className='text-2xl pt-10 md:text-3xl'>I am a full-stack web application developer. I specialize in applying design patterns and sound programming principles to create efficient and scalable solutions. I am passionate about learning new technologies and applying best practices in software development.</p>
           </div>
-          <div className='flex md:flex-row md:gap-x-5 flex-wrap justify-center'>
-            <img src="/img2.jpg" className='hidden w-100 h-100 object-cover mt-20 md:block transition duration-200 hover:scale-105' alt="" id="about_1"  draggable="false"/>
-            <img src="/about.jpeg" className='w-70 h-70 md:w-100 h-100 object-cover mt-20 transition duration-200 hover:scale-105' alt="" id="about_2"  draggable="false"/>
+          <div className='flex md:flex-row md:gap-x-5 md:pl-30 flex-wrap justify-center'>
+            <img src="/about.jpeg" className='w-50 h-50 md:w-70 h-70 rounded-4xl object-cover mt-20 transition duration-200 hover:scale-105' alt="" id="about_2"  draggable="false"/>
           </div>
         </div>
-
       <div className='w-80 flex pl-3 mt-40 md:pt-0 flex-col max-w-[90%] md:w-full'>
         <h1 className='text-3xl font-bold md:text-4xl'>1- Experience</h1>
         <p className='pt-3 leading-relaxed text-xl md:text-2xl'>
-          Freelance fullstack developer
-          <strong className=''> (march 2025) - Nico Trainer website</strong>
+          Freelance full-stack developer
+          <strong className=''> (February 2025 - April 2025) - Nico Trainer</strong>
         </p>
       </div>
-
-      <div className='w-80 flex  pl-3 pt-20 flex-col max-w-[90%] md:w-full'>
-        <h1 className='text-3xl font-bold md:text-4xl'>2- Skills</h1>
-        <div className="flex flex-col flex-wrap gap-1 pt-3">
-
-          <span className="text-xl md:text-2xl">React.js</span>
-          <span className="text-xl md:text-2xl">Node.js</span>
-          <span className="text-xl md:text-2xl">Express.js</span>
-          <span className="text-xl md:text-2xl">TailwindCSS</span>
-          <span className="text-xl md:text-2xl">HTML</span>
-          <span className="text-xl md:text-2xl">CSS</span>
-          <span className="text-xl md:text-2xl">Javascript</span>
-          <span className="text-xl md:text-2xl">Springboot</span>
-          <span className="text-xl md:text-2xl">Java</span>
-          <span className="text-xl md:text-2xl">PostgreSQL</span>
-          <span className="text-xl md:text-2xl">MongoDB</span>
-
-        </div>
-      </div>
+      
+      <Skills></Skills>
       <div className='w-80 flex pl-3 pt-20 flex-col max-w-[90%] md:w-full'>
         <h1 className='text-3xl font-bold md:text-4xl'>3- Education</h1>
         <p className='pt-3 text-xl leading-relaxed md:text-2xl'>
@@ -76,77 +63,8 @@ function App() {
         Personal and Professional IT Technician
         </p>
       </div>
-      <h1 className="pl-3 pt-20 text-3xl font-bold md:text-4xl">4- Projects</h1>  
-      <div className="w-full flex flex-col items-center pt-1">
-        <div className="flex flex-col md:pl-3 gap-8 pt-4 w-full items-center justify-center">
-          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_1">
-            <div className="p-4 text-white flex flex-col">
-            <h1 className="text-white text-3xl md:text-6xl  font-bold">COMPRA FACIL</h1>
-              <h2 className="text-lg mt-10 font-bold">React.js</h2>
-              <h2 className="text-lg font-bold">TailwindCSS</h2>
-              <h2 className="text-lg font-bold">MongoDB</h2>
-              <h2 className="text-lg font-bold">React Hot Toast</h2>
-              <h2 className="text-lg font-bold">Node.js</h2>
-              <h2 className="text-lg font-bold">Express.js</h2>
-              <h2 className="text-lg font-bold">MongoDB</h2>
-              <h2 className="text-lg font-bold">Mongoose</h2>
-              <h2 className="text-lg font-bold">JWT</h2>
-            </div>
-            <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://github.com/Nahucaroseli/e-commerce-react" target='_blank' className='md:text-xl font-bold underline'>FRONTEND CODE</a>
-                <a href="https://github.com/Nahucaroseli/e-commerce-backend" target='_blank' className='md:text-xl font-bold underline'>BACKEND CODE</a>
-                <a href="https://compra-facil.netlify.app/" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
-            </div>
-          </div>
-          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_2">
-
-            <div className="p-4 text-black flex flex-col">
-            <h1 className="text-black text-3xl md:text-6xl  font-bold">NOTE APP</h1>
-              <h2 className="text-lg mt-10 font-bold">React.js</h2>
-              <h2 className="text-lg font-bold">TailwindCSS</h2>
-              <h2 className="text-lg font-bold">PostgreSQL</h2>
-              <h2 className="text-lg font-bold">Springboot</h2>
-              <h2 className="text-lg font-bold">Supabase</h2>
-              <h2 className="text-lg font-bold">JWT</h2>
-            </div>
-            <div className='p-4 flex flex-row text-black gap-x-5'>
-                <a href="https://github.com/Nahucaroseli/noteapp-react" target='_blank' className='md:text-xl font-bold underline'>FRONTEND CODE</a>
-                <a href="https://github.com/Nahucaroseli/noteapp-backend" className='md:text-xl font-bold underline' target='_blank'>BACKEND CODE</a>
-                <a href="https://n-react.netlify.app/" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
-            </div>
-          </div>
-          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_3">
-
-            <div className="p-4 text-white flex flex-col">
-            <h1 className="text-white text-3xl md:text-6xl  font-bold">MULTIPROCESSOR SCHEDULING</h1>
-              <h2 className="text-lg mt-10 font-bold">Java</h2>
-              <h2 className="text-lg font-bold">Backtracking Algorithm</h2>
-              <h2 className="text-lg font-bold">Greedy Algorithm</h2>
-              <h2 className="text-lg font-bold">Graphs</h2>
-              <h2 className="text-lg font-bold">Trees</h2>
-              <h2 className="text-lg font-bold">LinkedList</h2>
-            </div>
-            <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://github.com/Nahucaroseli/prog3_tpe" target='_blank' className='md:text-xl font-bold underline'>CODE</a>
-            </div>
-          </div>
-          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_4">
-
-            <div className="p-4 text-white flex flex-col">
-            <h1 className="text-white text-3xl md:text-6xl  font-bold">NICO TRAINER WEBSITE</h1>
-              <h2 className="text-lg mt-10 font-bold">React.js</h2>
-              <h2 className="text-lg font-bold">TailwindCSS</h2>
-              <h2 className="text-lg font-bold">Node.js</h2>
-              <h2 className="text-lg font-bold">Express.js</h2>
-              <h2 className="text-lg font-bold">Brevo API</h2>
-            </div>
-            <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://nicotrainer.pages.dev/" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <div>
+      <Projects></Projects>
       <div className='flex flex-row justify-between'> 
         <div>
             <div className='pl-3 w-80 flex  mt-40 md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row justify-between'>
@@ -184,6 +102,7 @@ function App() {
       </div>
       </div>
 
+    </div>
     </>
   )
 }
