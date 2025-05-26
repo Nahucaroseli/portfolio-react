@@ -28,14 +28,11 @@ const [copiedText, setCopiedText] = useState(false);
                         }
                     </div>
                 </div>
-                <div className='pl-3 w-80 mt-10 flex md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row'>
+                <div className='pl-3 w-80 mt-20 flex md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row'>
                   <div className='flex flex-col'>
                       <h1 className='text-3xl font-bold md:text-4xl'>Socials</h1>
                       <a href='https://www.linkedin.com/in/nahuel-caroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Linkedin
-                      </a>
-                      <a href='https://www.instagram.com/nahu_caroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
-                        Instagram
                       </a>
                       <a href='https://github.com/Nahucaroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Github
