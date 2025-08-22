@@ -8,6 +8,9 @@ function Experience() {
           Freelance full-stack developer
           <strong className=''> (February 2025 - April 2025) - Nico Trainer</strong>
         </p>
+        <p className='pt-3 leading-relaxed text-xl md:text-2xl'>Backend developer intern
+          <strong className=''> (June 2025 - Present)</strong> - Municipality of Loberia
+        </p>
     </div>
   )
 }
