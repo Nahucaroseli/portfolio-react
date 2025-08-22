@@ -6,7 +6,7 @@ function Experience() {
         <h1 className='text-3xl font-bold md:text-4xl'>Experience</h1>
         <p className='pt-3 leading-relaxed text-xl md:text-2xl'>
           Freelance full-stack developer
-          <strong className=''> (February 2025 - April 2025) - Nico Trainer</strong>
+          <strong className=''> (February 2025 - April 2025)</strong> - Nico Trainer
         </p>
         <p className='pt-3 leading-relaxed text-xl md:text-2xl'>Backend developer intern
           <strong className=''> (June 2025 - Present)</strong> - Municipality of Loberia
