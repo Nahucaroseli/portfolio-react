@@ -58,3 +58,10 @@ body {
   background-size:cover;
   background-position: center;
 }
+
+#project_5{
+  background-image: url("/capacitaciones.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}

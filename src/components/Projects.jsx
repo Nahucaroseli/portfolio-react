@@ -16,7 +16,6 @@ function Projects() {
               <h2 className="text-lg font-bold">React Hot Toast</h2>
               <h2 className="text-lg font-bold">Node.js</h2>
               <h2 className="text-lg font-bold">Express.js</h2>
-              <h2 className="text-lg font-bold">MongoDB</h2>
               <h2 className="text-lg font-bold">Mongoose</h2>
               <h2 className="text-lg font-bold">JWT</h2>
             </div>
@@ -53,6 +52,27 @@ function Projects() {
             </div>
             <div className='p-4 flex flex-row text-white gap-x-5'>
                 <a href="https://nicotrainer.pages.dev/" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
+            </div>
+          </div>
+          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_5">
+
+            <div className="p-4 text-white flex flex-col">
+            <h1 className="text-white text-3xl md:text-6xl  font-bold">PORTAL EMPLEO LOBERIA</h1>
+              <h2 className="text-lg mt-10 font-bold">Angular</h2>
+              <h2 className="text-lg font-bold">Material</h2>
+              <h2 className="text-lg font-bold">Node.js</h2>
+              <h2 className="text-lg font-bold">Express.js</h2>
+              <h2 className="text-lg font-bold">Supabase</h2>
+              <h2 className="text-lg font-bold">JWT</h2>
+              <h2 className="text-lg font-bold">PostgreSQL</h2>
+              <h2 className="text-lg font-bold">PDFKit</h2>
+              <h2 className="text-lg font-bold">BCrypt</h2>
+              <h2 className="text-lg font-bold">Joi</h2>
+              <h2 className="text-lg font-bold">Multer</h2>
+              <h2 className="text-lg font-bold">Nodemailer</h2>
+            </div>
+            <div className='p-4 flex flex-row text-white gap-x-5'>
+                <a href="https://empleo.loberia.gob.ar" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
             </div>
           </div>
         </div>
