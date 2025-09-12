@@ -37,7 +37,7 @@ const [copiedText, setCopiedText] = useState(false);
                       <a href='https://github.com/Nahucaroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Github
                       </a>
-                      <a href='/Nahuel_Caroseli_CV.pdf' download="cv" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <a href='/Nahuel_Caroseli_CV.pdf' download="Nahuel_Caroseli_CV" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
                         Download resume
                       </a>
                   </div>
