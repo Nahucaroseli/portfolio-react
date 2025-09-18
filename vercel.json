@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/Nahuel_Caroseli_CV.pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        }
+      ]
+    }
+  ]
+}
