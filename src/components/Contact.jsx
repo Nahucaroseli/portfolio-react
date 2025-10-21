@@ -17,13 +17,13 @@ const [copiedText, setCopiedText] = useState(false);
         <div>
             <div className='pl-3 w-80 flex  mt-40 md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row justify-between'>
                     <div>
-                      <h1 className='text-3xl font-bold md:text-4xl'>Contact me</h1>
+                      <h1 className='text-3xl font-bold md:text-4xl'>Contactame</h1>
                       <p onClick={copyToClipboard} className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
                         nahucaroseli2100@gmail.com
                       </p>
                       {copiedText &&
                         <div className='email_copy'>
-                          <h1>Copied to Clipboard!</h1>
+                          <h1>Copiado al Portapapeles!</h1>
                           </div>
                         }
                     </div>
@@ -38,7 +38,7 @@ const [copiedText, setCopiedText] = useState(false);
                         Github
                       </a>
                       <a href='/Nahuel_Caroseli_CV.pdf' download="Nahuel_Caroseli_CV" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
-                        Download resume
+                        Descargar curriculum
                       </a>
                   </div>
              </div>

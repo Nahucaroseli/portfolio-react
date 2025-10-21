@@ -3,7 +3,7 @@ import React from 'react'
 function Projects() {
   return (
     <>
-      <h1 className="pl-3 pt-20 text-3xl font-bold md:text-4xl">Projects</h1>  
+      <h1 className="pl-3 pt-20 text-3xl font-bold md:text-4xl">Proyectos</h1>  
 
       <div className="w-full flex flex-col items-center pt-1">
         <div className="flex flex-col md:pl-3 gap-8 pt-4 w-full items-center justify-center">
@@ -19,7 +19,7 @@ function Projects() {
               <h2 className="text-lg font-bold">LinkedList</h2>
             </div>
             <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://github.com/Nahucaroseli/prog3_tpe" target='_blank' className='md:text-xl font-bold underline'>CODE</a>
+                <a href="https://github.com/Nahucaroseli/prog3_tpe" target='_blank' className='md:text-xl font-bold underline'>Ver codigo</a>
             </div>
           </div>
           <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_4">
@@ -37,7 +37,7 @@ function Projects() {
               <h2 className="text-lg font-bold">Lenis</h2>
             </div>
             <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://nicotrainer.pages.dev/" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
+                <a href="https://nicotrainer.pages.dev/" target='_blank' className='md:text-xl font-bold underline'>Ver sitio</a>
             </div>
           </div>
           <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_5">
@@ -60,7 +60,7 @@ function Projects() {
               </div>
             </div>
             <div className='p-4 flex flex-row text-white gap-x-5'>
-                <a href="https://empleo.loberia.gob.ar" target='_blank' className='md:text-xl font-bold underline'>WEBSITE</a>
+                <a href="https://empleo.loberia.gob.ar" target='_blank' className='md:text-xl font-bold underline'>Ver Sitio</a>
             </div>
           </div>
         </div>
