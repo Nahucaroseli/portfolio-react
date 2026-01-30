@@ -3,12 +3,10 @@ import React from 'react'
 function Projects() {
   return (
     <>
-      <h1 className="pl-3 pt-20 text-3xl font-bold md:text-4xl">Proyectos</h1>  
-
+    <div className='bg-amber-100 mt-20'>
       <div className="w-full flex flex-col items-center pt-1">
         <div className="flex flex-col md:pl-3 gap-8 pt-4 w-full items-center justify-center">
           <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_3">
-
             <div className="p-4 text-white flex flex-col">
             <h1 className="text-white text-3xl md:text-6xl  font-bold">MULTIPROCESSOR SCHEDULING</h1>
               <h2 className="text-lg mt-10 font-bold">Java</h2>
@@ -40,7 +38,7 @@ function Projects() {
                 <a href="https://nicotrainer.pages.dev/" target='_blank' className='md:text-xl font-bold underline'>Ver sitio</a>
             </div>
           </div>
-          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between" id="project_5">
+          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between mb-10" id="project_5">
 
             <div className="p-4 text-white flex flex-col">
               <h1 className="text-white text-3xl md:text-6xl  font-bold">PORTAL EMPLEO LOBERIA</h1>
@@ -64,6 +62,7 @@ function Projects() {
             </div>
           </div>
         </div>
+      </div>
       </div>
       </>
   )

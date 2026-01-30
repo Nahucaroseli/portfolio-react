@@ -27,7 +27,6 @@ function App() {
 
   return (
     <>
-     <ParticlesBackground/>
      <CustomCursor/>
     <div className='relative z-100'>
       <About/>

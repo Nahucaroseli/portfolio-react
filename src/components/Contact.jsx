@@ -17,8 +17,8 @@ const [copiedText, setCopiedText] = useState(false);
         <div>
             <div className='pl-3 w-80 flex  mt-40 md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row justify-between'>
                     <div>
-                      <h1 className='text-3xl font-bold md:text-4xl'>Contactame</h1>
-                      <p onClick={copyToClipboard} className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg'>
+                      <h1 className='text-3xl font-bold'>Contactame</h1>
+                      <p onClick={copyToClipboard} className='pt-3 leading-relaxed text-xl hover:underline hover:underline-lg'>
                         nahucaroseli2100@gmail.com
                       </p>
                       {copiedText &&
@@ -28,22 +28,24 @@ const [copiedText, setCopiedText] = useState(false);
                         }
                     </div>
                 </div>
-                <div className='pl-3 w-80 mt-20 flex md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row'>
+                <div className='pl-3 w-80 mt-30 flex md:pt-0 flex-col max-w-[90%] md:w-full md:flex-row'>
                   <div className='flex flex-col'>
-                      <h1 className='text-3xl font-bold md:text-4xl'>Socials</h1>
-                      <a href='https://www.linkedin.com/in/nahuel-caroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <h1 className='text-3xl font-bold'>Socials</h1>
+                      <a href='https://www.linkedin.com/in/nahuel-caroseli' target='_blank' className='pt-3 leading-relaxed text-xl  hover:underline hover:underline-lg cursor-none'>
                         Linkedin
                       </a>
-                      <a href='https://github.com/Nahucaroseli' target='_blank' className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <a href='https://github.com/Nahucaroseli' target='_blank' className='pt-3 leading-relaxed text-xl  hover:underline hover:underline-lg cursor-none'>
                         Github
                       </a>
-                      <a href='/Nahuel_Caroseli_CV.pdf' download="Nahuel_Caroseli_CV" className='pt-3 leading-relaxed text-xl md:text-2xl hover:underline hover:underline-lg cursor-none'>
+                      <a href='/Nahuel_Caroseli_CV.pdf' download="Nahuel_Caroseli_CV" className='pt-3 leading-relaxed text-xl  hover:underline hover:underline-lg cursor-none'>
                         Descargar curriculum
                       </a>
                   </div>
+
              </div>
+
         </div>
-        <img src="/img.jpg" className='object-cover mt-40 mr-5 hidden md:flex md:w-90 h-90 transition duration-200 hover:scale-105' alt="" />    
+        <h1 className='text-4xl md:text-5xl font-bold hidden md:flex absolute right-1 bottom-1'>NAHUEL CAROSELI</h1>             
       </div>
   )
 }
