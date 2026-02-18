@@ -4,7 +4,7 @@ function CustomCursor() {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const moveCursor = (e) => {
+    const moveCursor = (e:MouseEvent) => {
       setCursorPos({ x: e.clientX, y: e.clientY });
     };
 
