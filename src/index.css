@@ -65,3 +65,10 @@ body {
   background-size:cover;
   background-position: center;
 }
+
+#project_6{
+  background-image: url("/barber-shop.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}

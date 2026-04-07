@@ -39,7 +39,6 @@ function Projects() {
             </div>
           </div>
           <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between mb-10" id="project_5">
-
             <div className="p-4 text-white flex flex-col">
               <h1 className="text-white text-3xl md:text-6xl  font-bold">PORTAL EMPLEO LOBERIA</h1>
               <div className='flex flex-col h-[21rem] md:h-full -mt-5'>
@@ -61,6 +60,24 @@ function Projects() {
                 <a href="https://empleo.loberia.gob.ar" target='_blank' className='md:text-xl font-bold underline'>Ver Sitio</a>
             </div>
           </div>
+          <div className="flex flex-col w-full max-w-[70rem] h-[500px] md:h-[600px] shadow-lg rounded-lg justify-between mb-10" id="project_6">
+            <div className="p-4 text-white flex flex-col">
+              <h1 className="text-white text-3xl md:text-6xl  font-bold">PELUQUERIA VIMIX</h1>
+              <div className='flex flex-col h-[21rem] md:h-full -mt-5'>
+                <h2 className="text-lg mt-10 font-bold">React</h2>
+                <h2 className="text-lg mt-10 font-bold">TailwindCSS</h2>
+                <h2 className="text-lg font-bold">Springboot</h2>
+                <h2 className="text-lg font-bold">Typescript</h2>
+                <h2 className="text-lg font-bold">Toast</h2>
+                <h2 className="text-lg font-bold">Supabase</h2>
+                <h2 className="text-lg font-bold">PostgreSQL</h2>
+              </div>
+            </div>
+            <div className='p-4 flex flex-row text-white gap-x-5'>
+                <a href="https://github.com/Nahucaroseli" target='_blank' className='md:text-xl font-bold underline'>Ver codigo</a>
+            </div>
+          </div>
+
         </div>
       </div>
       </div>
