@@ -1,21 +1,6 @@
 @import "tailwindcss";
 
-:root {
-  
-  color-scheme: light dark;
-  color: #1B5018;
-  background-color: #ffdf9f;
-}
 
-
-body {
-  cursor: none;
-}
-
-::selection{
-  background-color: #1B5018;
-  color:white;
-}
 
 #about_1, #about_2{
   user-select: none;

@@ -1,0 +1,28 @@
+/* Reset y base oscura */
+html, body {
+  background-color: #000000;
+  color: #f4f4f5; /* Un blanco roto (zinc-100) para que no lastime los ojos */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Selección de texto personalizada */
+::selection {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Estilo para las secciones de tus componentes */
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 2rem;
+  box-sizing: border-box;
+  /* Línea divisoria minimalista opcional entre secciones */
+  border-bottom: 1px solid rgba(63, 63, 70, 0.2); /* zinc-800 muy sutil */
+}

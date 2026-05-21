@@ -2,13 +2,13 @@ import { useEffect } from 'react';
 import Lenis from 'lenis';
 import './App.css';
 
-import CustomCursor from './components/CustomCursor';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import About from './components/About';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -34,15 +34,15 @@ function App() {
 
   return (
     <>
-      <CustomCursor />
-      <div className="relative z-100">
+
+        <Navbar/>
         <About />
         <Experience />
         <Skills />
         <Education />
         <Projects />
         <Contact />
-      </div>
+
     </>
   );
 }
