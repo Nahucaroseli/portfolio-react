@@ -12,7 +12,7 @@ const skillSets: SkillCategory[] = [
   },
   {
     category: 'Frontend & UI',
-    skills: ['JavaScript', 'React.js', 'HTML', 'CSS', 'Tailwind CSS'],
+    skills: ['JavaScript','Typescript', 'React.js', 'HTML', 'CSS', 'Tailwind CSS'],
   },
   {
     category:'Database & Tools',
