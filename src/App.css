@@ -26,3 +26,16 @@ section {
   /* Línea divisoria minimalista opcional entre secciones */
   border-bottom: 1px solid rgba(63, 63, 70, 0.2); /* zinc-800 muy sutil */
 }
+
+.cursor-glow {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: rgb(238,174,202);
+    background: -moz-radial-gradient(circle, rgba(238,174,202,0.8) 0%, rgba(238,174,202,0.2) 100%);
+    box-shadow: 0px 0px 20px rgba(238,174,202,1);
+    background: radial-gradient(circle, rgba(238,174,202,0.8) 0%, rgba(238,174,202,0.2) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}

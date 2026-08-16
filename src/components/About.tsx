@@ -42,7 +42,7 @@ function About() {
             <div className="absolute -inset-2 rounded-xl bg-zinc-900 opacity-0 group-hover:opacity-100 transition duration-500 blur-sm" />
             
             <img 
-              src="/about-1.jpg" 
+              src="/about.png" 
               className="relative w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 border border-zinc-800 transition-all duration-500" 
               alt="Nahuel Caroseli" 
               id="about_2"  
