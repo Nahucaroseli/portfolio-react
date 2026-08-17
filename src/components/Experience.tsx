@@ -21,7 +21,7 @@ const experiences: Job[] = [
   {
     role: 'Backend developer',
     company: 'Municipalidad de Loberia',
-    period: 'Jun 2025 — Sep 2025',
+    period: 'Jun 2025 — Oct 2025',
   },
 ];
 
