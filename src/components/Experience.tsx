@@ -9,6 +9,11 @@ interface Job {
 
 const experiences: Job[] = [
   {
+    role: 'Full stack developer',
+    company: 'Blyko Digital Solutions',
+    period: 'Jul 2026 — Oct 2026',
+  },
+  {
     role: 'Freelance full-stack developer',
     company: 'Vimix',
     period: 'Feb 2026 — Abr 2026',
