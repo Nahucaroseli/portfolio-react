@@ -72,7 +72,7 @@ function Contact() {
               → GitHub
             </a>
             <a
-              href="/Nahuel_Caroseli_CV.pdf"
+              href="/cv-nahuel-caroseli.pdf"
               download="Nahuel_Caroseli_CV"
               className="text-base font-mono text-zinc-400 hover:text-white transition-colors duration-300 pt-2 border-t border-zinc-900/60 w-fit text-emerald-400/90 hover:text-emerald-300"
             >
