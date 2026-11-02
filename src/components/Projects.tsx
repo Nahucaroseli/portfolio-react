@@ -10,6 +10,13 @@ interface Project {
 
 const projectsList: Project[] = [
   {
+    title: 'SMASH DISTRICT DEMO',
+    tags: ['React','TailwindCSS','Lenis','Material'],
+    linkText:'Ver sitio',
+    linkUrl:'https://smash-district-demo.vercel.app',
+    type: 'live'
+  },
+  {
     title: 'MULTIPROCESSOR SCHEDULING',
     tags: ['Java', 'Backtracking', 'Greedy Algorithm', 'Graphs', 'Trees', 'LinkedList'],
     linkText: 'Ver código',
